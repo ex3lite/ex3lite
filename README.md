@@ -67,13 +67,13 @@ infrastructure for AI agents.
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=ex3lite&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true&theme=github_dark">
-  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=ex3lite&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true">
+  <source media="(prefers-color-scheme: dark)" srcset="stats-dark.svg">
+  <img alt="GitHub stats" src="stats-light.svg">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ex3lite&layout=compact&hide_border=true&langs_count=8&theme=github_dark">
-  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ex3lite&layout=compact&hide_border=true&langs_count=8">
+  <source media="(prefers-color-scheme: dark)" srcset="langs-dark.svg">
+  <img alt="Top languages" src="langs-light.svg">
 </picture>
 
 <picture>
