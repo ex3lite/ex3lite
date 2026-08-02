@@ -5,25 +5,25 @@
   <img alt="Roman Sokolov — ex3lite — core engineer" src="assets/hero-light.svg" width="100%">
 </picture>
 
-**EN** · [RU](README.ru.md)
+[EN](README.md) · **RU**
 
 </div>
 
-## // about
+## // о себе
 
-**Core engineer.** I build the parts products stand on — core services, protocol internals
-and the integrations everything else plugs into: gRPC APIs, network stacks, document
-pipelines and infrastructure for AI agents.
+**Core engineer.** Делаю то, на чём стоит продукт — базовые сервисы, внутренности протоколов
+и интеграции, в которые включается всё остальное: gRPC API, сетевые стеки, пайплайны
+документов и инфраструктура для AI-агентов.
 
 ```
-now      core engineer on an AI project — core services & agent infrastructure
-also     one of the lead developers on a VPN project — Amnezia + Xray + WireGuard
-ships    MCP servers that give LLMs real-world capabilities
-tools    Claude Code control centers, desktop session editors
-digs     systems design, protocol internals, secure networking
+сейчас   core engineer на AI-проекте — базовые сервисы и инфраструктура агентов
+также    один из ведущих разработчиков VPN-проекта — Amnezia + Xray + WireGuard
+пишу     MCP-серверы, которые дают LLM реальные возможности
+тулинг   центры управления Claude Code, десктопные редакторы сессий
+копаю    системный дизайн, внутренности протоколов, защищённые сети
 ```
 
-## // stack
+## // стек
 
 <div align="center">
 
@@ -34,7 +34,7 @@ digs     systems design, protocol internals, secure networking
 
 </div>
 
-## // projects
+## // проекты
 
 <table>
 <tr>
@@ -93,7 +93,7 @@ digs     systems design, protocol internals, secure networking
 </tr>
 </table>
 
-## // activity
+## // активность
 
 <table>
 <tr>
@@ -116,12 +116,12 @@ digs     systems design, protocol internals, secure networking
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg">
-  <img alt="Contribution heatmap — commits & pull requests, private activity included" src="assets/heatmap-light.svg" width="900">
+  <img alt="Тепловая карта контрибуций — commits & pull requests, private activity included" src="assets/heatmap-light.svg" width="900">
 </picture>
 
 </div>
 
-## // contact
+## // контакты
 
 <div align="center">
 
