@@ -27,10 +27,16 @@ infrastructure for AI agents.
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 
+**Data & Storage**
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+![GORM](https://img.shields.io/badge/GORM-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+
 **Backend & Infrastructure**
 
 ![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=for-the-badge&logo=grpc&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
@@ -59,8 +65,8 @@ infrastructure for AI agents.
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=ex3lite&show_icons=true&hide_border=true&rank_icon=github&theme=github_dark">
-  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=ex3lite&show_icons=true&hide_border=true&rank_icon=github">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=ex3lite&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true&theme=github_dark">
+  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=ex3lite&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true">
 </picture>
 
 <picture>
@@ -71,6 +77,17 @@ infrastructure for AI agents.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=ex3lite&hide_border=true&theme=github-dark-blue">
   <img alt="GitHub streak" src="https://streak-stats.demolab.com?user=ex3lite&hide_border=true">
+</picture>
+
+</div>
+
+## 📈 Contribution Heatmap
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://ghchart.rshah.org/409ba5/ex3lite">
+  <img alt="Yearly contribution heatmap — commits & pull requests" src="https://ghchart.rshah.org/2c5364/ex3lite">
 </picture>
 
 </div>
