@@ -18,7 +18,9 @@ jobs:
           python3 scripts/gen_heatmap.py
           python3 scripts/gen_stats.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # PROFILE_PAT (fine-grained, read-only) makes private repos count in
+          # stats/langs; without it the built-in token sees public repos only.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_PAT || secrets.GITHUB_TOKEN }}
           PYTHONPATH: scripts
       - name: Commit if changed
         run: |

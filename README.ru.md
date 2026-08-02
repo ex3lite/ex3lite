@@ -101,14 +101,14 @@
 <tr>
 <td width="50%">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
-  <img alt="GitHub stats" src="assets/stats-light.svg" width="440">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg?v=3">
+  <img alt="GitHub stats" src="assets/stats-light.svg?v=3" width="440">
 </picture>
 </td>
 <td width="50%">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/langs-dark.svg">
-  <img alt="Top languages" src="assets/langs-light.svg" width="440">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/langs-dark.svg?v=3">
+  <img alt="Top languages" src="assets/langs-light.svg?v=3" width="440">
 </picture>
 </td>
 </tr>
