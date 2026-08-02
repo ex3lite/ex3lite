@@ -2,7 +2,7 @@
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Roman%20Sokolov&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=ex3lite%20%C2%B7%20Core%20Engineer&descSize=20&descAlignY=57)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=900&center=true&vCenter=true&width=640&lines=Core+Engineer;Python+%C2%B7+TypeScript+%C2%B7+Go;Protocols+%C2%B7+Integrations+%C2%B7+AI+infrastructure)](https://github.com/ex3lite)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=900&center=true&vCenter=true&width=640&lines=Core+Engineer;Python+%C2%B7+TypeScript+%C2%B7+Go;Protocols+%C2%B7+Integrations+%C2%B7+AI+infrastructure;VPN+core%3A+Amnezia+%C2%B7+Xray+%C2%B7+WireGuard)](https://github.com/ex3lite)
 
 </div>
 
@@ -15,6 +15,7 @@ that everything else plugs into: gRPC APIs, network stacks, document pipelines a
 infrastructure for AI agents.
 
 - 🧠 Currently a **Core Engineer on an AI project** — core services & agent infrastructure
+- 🛡️ One of the lead developers on a **VPN project** — Amnezia + Xray + WireGuard
 - 🔌 Author of several **MCP servers** — giving LLMs real-world capabilities
 - 🛠️ Developer tooling: from Claude Code control centers to desktop session editors
 - 📡 Deep interests: systems design, protocol internals, secure networking
@@ -37,6 +38,7 @@ infrastructure for AI agents.
 **Backend & Infrastructure**
 
 ![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=for-the-badge&logo=grpc&logoColor=white)
+![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
@@ -86,8 +88,8 @@ infrastructure for AI agents.
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://ghchart.rshah.org/409ba5/ex3lite">
-  <img alt="Yearly contribution heatmap — commits & pull requests" src="https://ghchart.rshah.org/2c5364/ex3lite">
+  <source media="(prefers-color-scheme: dark)" srcset="heatmap-dark.svg">
+  <img alt="Yearly contribution heatmap — commits & pull requests, private activity included" src="heatmap-light.svg">
 </picture>
 
 </div>
