@@ -17,6 +17,7 @@ W, H = 440, 240
 QUERY = """
 query($login: String!) {
   user(login: $login) {
+    id
     contributionsCollection {
       totalCommitContributions
       restrictedContributionsCount
@@ -25,21 +26,53 @@ query($login: String!) {
     }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
       totalCount
-      nodes {
-        stargazerCount
-        languages(first: 12, orderBy: {field: SIZE, direction: DESC}) {
-          edges { size node { name } }
-        }
-      }
+      nodes { stargazerCount }
     }
   }
 }
 """
 
+# Org repos the affiliations listing may not surface; skipped silently when the
+# token cannot see them (e.g. the nightly fine-grained PAT scoped to ex3lite).
+EXTRA_REPOS = [
+    ("Matrena-VPN", "backend_ai"),
+    ("Matrena-VPN", "kakadu_cbackend"),
+    ("Matrena-VPN", "cbackend"),
+]
 
-def fetch():
+REPO_LANG_FRAGMENT = """
+fragment RepoLang on Repository {
+  nameWithOwner
+  defaultBranchRef { target { ... on Commit { history(author: $author, since: $since) { totalCount } } } }
+  languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+    totalSize
+    edges { size node { name } }
+  }
+}
+"""
+
+LANG_QUERY = (
+    """
+query($login: String!, $author: CommitAuthor!, $since: GitTimestamp!) {
+  user(login: $login) {
+    repositories(first: 100, affiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER],
+                 isFork: false, orderBy: {field: PUSHED_AT, direction: DESC}) {
+      nodes { ...RepoLang }
+    }
+  }
+"""
+    + "".join(
+        f'  x{i}: repository(owner: "{owner}", name: "{name}") {{ ...RepoLang }}\n'
+        for i, (owner, name) in enumerate(EXTRA_REPOS)
+    )
+    + "}\n"
+    + REPO_LANG_FRAGMENT
+)
+
+
+def gql(query, variables, allow_partial=False):
     token = os.environ["GITHUB_TOKEN"]
-    body = json.dumps({"query": QUERY, "variables": {"login": USER}}).encode()
+    body = json.dumps({"query": query, "variables": variables}).encode()
     req = urllib.request.Request(
         "https://api.github.com/graphql",
         data=body,
@@ -47,19 +80,56 @@ def fetch():
     )
     with urllib.request.urlopen(req) as resp:
         data = json.load(resp)
-    if data.get("errors"):
+    # allow_partial: NOT_FOUND on an EXTRA_REPOS alias just means this token
+    # cannot see that repo — usable data still comes back for the rest.
+    if data.get("errors") and not (allow_partial and data.get("data")):
         raise SystemExit(f"GraphQL errors: {data['errors']}")
-    return data["data"]["user"]
+    return data["data"]
+
+
+def fetch():
+    return gql(QUERY, {"login": USER})["user"]
+
+
+def authored_language_weights(user_id):
+    """Languages weighted by MY authored commits per repository (last year).
+
+    GraphQL hides the per-repo breakdown of private contributions behind
+    restrictedContributionsCount for every token kind, so we walk default-branch
+    history with an author filter instead: every repo the token can see, plus
+    the EXTRA_REPOS org list. Weight = my commits x language share of the repo.
+    """
+    since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=365)).strftime(
+        "%Y-%m-%dT%H:%M:%SZ"
+    )
+    data = gql(
+        LANG_QUERY,
+        {"login": USER, "author": {"id": user_id}, "since": since},
+        allow_partial=True,
+    )
+    nodes = list(data["user"]["repositories"]["nodes"])
+    nodes += [data.get(f"x{i}") for i in range(len(EXTRA_REPOS))]
+    sizes, seen = {}, set()
+    for node in nodes:
+        if not node or node["nameWithOwner"] in seen or not node["defaultBranchRef"]:
+            continue
+        seen.add(node["nameWithOwner"])
+        commits = node["defaultBranchRef"]["target"]["history"]["totalCount"]
+        if not commits:
+            continue
+        langs = node["languages"]
+        total = langs["totalSize"] or 1
+        for edge in langs["edges"]:
+            name = edge["node"]["name"]
+            sizes[name] = sizes.get(name, 0) + edge["size"] / total * commits
+    return sizes
 
 
 def collect(user):
     cc = user["contributionsCollection"]
     repos = user["repositories"]
     stars = sum(n["stargazerCount"] for n in repos["nodes"])
-    sizes = {}
-    for node in repos["nodes"]:
-        for edge in node["languages"]["edges"]:
-            sizes[edge["node"]["name"]] = sizes.get(edge["node"]["name"], 0) + edge["size"]
+    sizes = authored_language_weights(user["id"])
     year = dt.date.today().year
     rows = [
         (f"commits ({year})", cc["totalCommitContributions"] + cc["restrictedContributionsCount"]),
@@ -112,7 +182,7 @@ def render_langs(langs, key):
     parts = [
         svg_open(W, H, "top languages"),
         rect(0.5, 0.5, W - 1, H - 1, rx=11, fill=c["panel"], stroke=c["line"]),
-        text(20, 32, f"$ gh langs --top {len(langs)}", size=12, fill=c["green"]),
+        text(20, 32, "$ gh langs --authored --last-year", size=12, fill=c["green"]),
         rect(1, 48, W - 2, 1, fill=c["line"]),
     ]
     x = 24.0
