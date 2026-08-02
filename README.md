@@ -5,17 +5,18 @@
   <img alt="Roman Sokolov — ex3lite — core engineer" src="assets/hero-light.svg" width="100%">
 </picture>
 
-<a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-active-dark.svg"><img alt="EN" src="assets/lang-en-active-light.svg"></picture></a> <a href="README.ru.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-ru-idle-dark.svg"><img alt="RU" src="assets/lang-ru-idle-light.svg"></picture></a>
+<a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sep-left-dark.svg"><img alt="" src="assets/sep-left-light.svg"></picture></a><a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-active-dark.svg"><img alt="EN" src="assets/lang-en-active-light.svg"></picture></a> <a href="README.ru.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-ru-idle-dark.svg"><img alt="RU" src="assets/lang-ru-idle-light.svg"></picture></a><a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sep-right-dark.svg"><img alt="" src="assets/sep-right-light.svg"></picture></a>
 
 </div>
 
 ## // about
 
-**Core engineer.** I build the parts products stand on — core services, protocol internals
-and the integrations everything else plugs into: gRPC APIs, network stacks, document
-pipelines and infrastructure for AI agents.
-
 <div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/intro-dark.svg">
+  <img alt="Core engineer. I build the parts products stand on — core services, protocol internals and the integrations everything else plugs into: gRPC APIs, network stacks, document pipelines and infrastructure for AI agents." src="assets/intro-light.svg" width="900">
+</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg">

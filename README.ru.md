@@ -5,17 +5,18 @@
   <img alt="Roman Sokolov — ex3lite — core engineer" src="assets/hero-light.svg" width="100%">
 </picture>
 
-<a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-idle-dark.svg"><img alt="EN" src="assets/lang-en-idle-light.svg"></picture></a> <a href="README.ru.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-ru-active-dark.svg"><img alt="RU" src="assets/lang-ru-active-light.svg"></picture></a>
+<a href="README.ru.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sep-left-dark.svg"><img alt="" src="assets/sep-left-light.svg"></picture></a><a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-idle-dark.svg"><img alt="EN" src="assets/lang-en-idle-light.svg"></picture></a> <a href="README.ru.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-ru-active-dark.svg"><img alt="RU" src="assets/lang-ru-active-light.svg"></picture></a><a href="README.ru.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sep-right-dark.svg"><img alt="" src="assets/sep-right-light.svg"></picture></a>
 
 </div>
 
 ## // о себе
 
-**Core engineer.** Делаю то, на чём стоит продукт — базовые сервисы, внутренности протоколов
-и интеграции, в которые включается всё остальное: gRPC API, сетевые стеки, пайплайны
-документов и инфраструктура для AI-агентов.
-
 <div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/intro-ru-dark.svg">
+  <img alt="Core engineer. Делаю то, на чём стоит продукт — базовые сервисы, внутренности протоколов и интеграции, в которые включается всё остальное: gRPC API, сетевые стеки, пайплайны документов и инфраструктура для AI-агентов." src="assets/intro-ru-light.svg" width="900">
+</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/about-ru-dark.svg">
