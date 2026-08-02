@@ -15,13 +15,14 @@
 and the integrations everything else plugs into: gRPC APIs, network stacks, document
 pipelines and infrastructure for AI agents.
 
-```
-now      core engineer on an AI project — core services & agent infrastructure
-also     one of the lead developers on a VPN project — Amnezia + Xray + WireGuard
-ships    MCP servers that give LLMs real-world capabilities
-tools    Claude Code control centers, desktop session editors
-digs     systems design, protocol internals, secure networking
-```
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg">
+  <img alt="now: core engineer on an AI project — core services and agent infrastructure. also: one of the lead developers on a VPN project — Amnezia + Xray + WireGuard. ships: MCP servers that give LLMs real-world capabilities. tools: Claude Code control centers, desktop session editors. digs: systems design, protocol internals, secure networking" src="assets/about-light.svg" width="900">
+</picture>
+
+</div>
 
 ## // stack
 
