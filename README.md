@@ -5,7 +5,7 @@
   <img alt="Roman Sokolov — ex3lite — core engineer" src="assets/hero-light.svg" width="100%">
 </picture>
 
-**EN** · [RU](README.ru.md)
+<a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-active-dark.svg"><img alt="EN" src="assets/lang-en-active-light.svg"></picture></a> <a href="README.ru.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-ru-idle-dark.svg"><img alt="RU" src="assets/lang-ru-idle-light.svg"></picture></a>
 
 </div>
 
