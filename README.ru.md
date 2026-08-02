@@ -30,8 +30,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <img alt="tech stack" src="assets/stack-light.svg" width="900">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg?v=2">
+  <img alt="tech stack" src="assets/stack-light.svg?v=2" width="900">
 </picture>
 
 </div>
@@ -127,7 +127,7 @@
 
 <div align="center">
 
-<a href="https://t.me/SHARASHKABRK"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-telegram-dark.svg"><img alt="Telegram" src="assets/btn-telegram-light.svg"></picture></a> <a href="https://github.com/ex3lite"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-github-dark.svg"><img alt="GitHub" src="assets/btn-github-light.svg"></picture></a>
+<a href="https://t.me/SHARASHKABRK"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-telegram-dark.svg?v=2"><img alt="Telegram" src="assets/btn-telegram-light.svg?v=2"></picture></a> <a href="https://github.com/ex3lite"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-github-dark.svg?v=2"><img alt="GitHub" src="assets/btn-github-light.svg?v=2"></picture></a>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
