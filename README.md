@@ -14,7 +14,7 @@ I build the parts products stand on — the core services, protocol internals an
 that everything else plugs into: gRPC APIs, network stacks, document pipelines and
 infrastructure for AI agents.
 
-- ⚙️ Working on core services & AI-agent infrastructure
+- 🧠 Currently a **Core Engineer on an AI project** — core services & agent infrastructure
 - 🔌 Author of several **MCP servers** — giving LLMs real-world capabilities
 - 🛠️ Developer tooling: from Claude Code control centers to desktop session editors
 - 📡 Deep interests: systems design, protocol internals, secure networking
