@@ -125,14 +125,7 @@
 
 <div align="center">
 
-<a href="https://t.me/SHARASHKABRK"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/btn-telegram-dark.svg">
-  <img alt="Telegram" src="assets/btn-telegram-light.svg">
-</picture></a>
-<a href="https://github.com/ex3lite"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/btn-github-dark.svg">
-  <img alt="GitHub" src="assets/btn-github-light.svg">
-</picture></a>
+<a href="https://t.me/SHARASHKABRK"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-telegram-dark.svg"><img alt="Telegram" src="assets/btn-telegram-light.svg"></picture></a> <a href="https://github.com/ex3lite"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-github-dark.svg"><img alt="GitHub" src="assets/btn-github-light.svg"></picture></a>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
